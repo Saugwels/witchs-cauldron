@@ -8,5 +8,5 @@ Simple Haskell library for chemistry stuff
 <b> Features </b>
 <ul>
   <li> easy-to-use data structures for molekuls, salts... </li>
-  <li> generating empirical formulas </li> 
+  <li> generating empirical formulas for salts</li> 
 </ul>
