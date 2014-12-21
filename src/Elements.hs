@@ -1,10 +1,13 @@
 
 module Elements where
 
-data Element = Element {name :: String, period :: Int, group :: Int} deriving (Eq, Ord)
+data Element = Element {name :: String, period :: Int, group :: Int} deriving (Eq)
 
 instance Show Element where
     show (Element elementName _ _) = elementName
+
+instance Ord Element where
+    (Element _ p _) `compare` (Element _ p2 _ ) = p `compare` p2
 
 h = Element {name = "H", period=1, group=1} 
 
