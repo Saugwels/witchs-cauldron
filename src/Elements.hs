@@ -7,9 +7,15 @@ instance Show Element where
     show (Element elementName _ _) = elementName
 
 h = Element {name = "H", period=1, group=1} 
-na = Element {name = "Na", period=1, group=2}
-mg = Element {name = "Mg", period=2, group=2}
+
+-- metals
+li = Element {name = "Li", period=1, group=2}
+be = Element {name = "Be", period=2, group=2}
 b  = Element {name = "B",  period=3, group=2}
+na = Element {name = "Na", period=1, group=3}
+mg = Element {name = "Mg", period=2, group=3}
+al = Element {name = "Al", period=3, group=3}
+k  = Element {name = "K",  period=1, group=4}
 ca = Element {name = "Ca", period=2, group=4}
 -- nonmetals
 c  = Element {name = "C",  period=4, group=2}
