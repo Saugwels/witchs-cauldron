@@ -1,4 +1,4 @@
-Witchs-cauldron
+Witch's cauldron
 ===============
 
 Simple Haskell library for chemistry stuff
