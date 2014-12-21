@@ -33,10 +33,6 @@ elementToIon (Element.Element ename p gp) =
     if p==8 then error "No reation" else Ion {name=ename, charge=ch}
     where ch = if p <= 3 then p else p-8
 
-natrium = Ion {name = "Na", charge = 1}
-barium  = Ion {name = "Ba", charge = 2}
-aluminium = Ion {name = "Al", charge = 3}
-
 -- Molecular ions
 carbonat = Ion {name = "CO3", charge = -2}
 sulfat   = Ion {name = "SO4", charge = -2}
