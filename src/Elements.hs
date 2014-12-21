@@ -1,7 +1,7 @@
 
 module Elements where
 
-data Element = Element {name :: String, period :: Int, group :: Int}
+data Element = Element {name :: String, period :: Int, group :: Int} deriving (Eq, Ord)
 
 instance Show Element where
     show (Element elementName _ _) = elementName
