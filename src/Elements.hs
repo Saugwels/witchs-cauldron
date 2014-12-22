@@ -9,6 +9,17 @@ instance Show Element where
 instance Ord Element where
     (Element _ p _) `compare` (Element _ p2 _ ) = p `compare` p2
 
+isMetal :: Element -> Bool
+isMetal e 
+    | period e <= group e = True
+    | otherwise = False
+
+isNonMetal :: Element -> Bool
+isNonMetal e = not $ isMetal e
+
+isNobelGas :: Element -> Bool
+isNobelGas e = period e == 8
+
 h = Element {name = "H", period=1, group=1} 
 
 -- metals
@@ -25,6 +36,8 @@ c  = Element {name = "C",  period=4, group=2}
 n  = Element {name = "N",  period=5, group=2}
 o  = Element {name = "0",  period=6, group=2}
 f  = Element {name = "F",  period=7, group=2}
+p  = Element {name = "P",  period=5, group=3}
+s  = Element {name = "S",  period=6, group=3}
 
 cl = Element {name = "Cl", period=7, group=3}
 
