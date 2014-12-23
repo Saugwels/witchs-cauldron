@@ -1,7 +1,7 @@
 
 module Salt where
 
-import qualified Elements as Element
+import qualified Element as Element
 
 data Ion  = Ion {name :: String, charge :: Int} deriving (Eq)
 data Salt = Salt {kation :: Kation, factorKa :: Int
