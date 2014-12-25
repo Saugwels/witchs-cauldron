@@ -7,10 +7,11 @@ Simple Haskell library for chemistry stuff
 ####Features
 - easy-to-use data structures for molekuls, salts...
 - generating empirical formulas for salts
+
 -----
 #####Examples
 ######Generating a Salt
-` Salt> let natriumoxid = genSalt Element.na Element.o `
+` Salt> let natriumoxid = genSalt Element.na Element.o ` <br>
 ` Salt> Na20`
 
 -----
