@@ -23,6 +23,9 @@ instance Show Salt where
                     else (name an ++ show faAn)
             else (name an ++ ""))
 
+genSalt :: Element.Element -> Element.Element -> Salt
+genSalt ka an = empiricalFormula (elementToIon ka) (elementToIon an)
+
 empiricalFormula :: Kation -> Anion -> Salt
 empiricalFormula metal@(Ion ka kaCharge) nonmetal@(Ion an anCharge)=
     Salt {kation = metal, factorKa = abs anCharge
