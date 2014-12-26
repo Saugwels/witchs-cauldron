@@ -12,7 +12,7 @@ Simple Haskell library for chemistry stuff
 #####Examples
 ######Generating a Salt
 ` Salt> let natriumoxid = genSalt Element.na Element.o ` <br>
-` Salt> Na20`
+` Salt> Na2O`
 
 -----
 ###Author
